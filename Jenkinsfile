@@ -4,22 +4,19 @@ pipeline {
     stages {
         stage('Clean') {
             steps {
-                echo '# cleaning -------------'
-                make clean
+                sh 'make clean'
             }
         }
 
         stage('Build') {
             steps {
-                echo '# building -------------'
-                make
+                sh 'make'
             }
         }
 
         stage('Test') {
             steps {
-                echo '# Testing -------------'
-                ./hello
+                sh hello
             }
         }
     }
