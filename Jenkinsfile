@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo '# Testing -------------'
-                ./hello > /dev/null 2>&1
+                ./hello
             }
         }
     }
