@@ -1,5 +1,5 @@
 pipeline {
-    agent { labe: 'master' }
+    agent { label: 'master' }
 
     stages {
         stage('Clean') {
